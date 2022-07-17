@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Corsalia</title>
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Empieza el header - Igual en todas las páginas -->
+	<header>
+		<a href="index.html">
+			<img src="images/logo-amarillo.jpg" alt="Logo de Corsalia" id="logo">
+		</a>
+		<nav>
+			<ul>
+				<li>
+					<a href="personajes.html">Personajes</a>
+				</li>
+				<li>
+					<a href="diccionario.html">Diccionario</a>
+				</li>
+				<li>
+					<a href="mapa.html">Mapa</a>
+				</li>
+				<li>
+					<a href="contacto.html">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Empieza el main -->
+	<main>
+		<h1>Contacto</h1>
+		<section>
+			<form action="#.php" id="contacto-contenedor">
+				<label id="name-label" for="name">Nombre y apellido</label>
+				<input id="name" type="text" placeholder="Inkerr Rousnel">
+				<label id="correo-label" for="correo">Email</label>
+				<input id="correo" type="email" placeholder="inkerr.rousnel@dragon.com">
+				<label id="cel-label" for="cel">Celular</label>
+				<input id="cel" type="number" placeholder="1117062022">
+				<fieldset id="pedido" class="contactoFieldset">
+					<legend>Info de pedido</legend>
+					<label id="libro-label" for="libro">Quiero comprar el libro</label>
+					<input id="libro" type="checkbox" value="quiere libro">
+					<label id="local-label" for="local">Retiro en el local</label>
+					<input id="local" type="radio" name="envio">
+					<label id="casa-label" for="casa">Envío a domicilio</label>
+					<input id="casa" type="radio" value="domiclio" name="envio">
+					<label id="provincia-label" for="provincia">Provincia</label>
+					<select id="provincia" name="opciones">
+						<option value="bsas">Buenos Aires</option>
+						<option value="caba">CABA</option>
+						<option value="interior">Interior del país</option>
+					</select>
+				</fieldset>
+				<p id="comentario">Deje su mensaje</p>
+				<textarea id="mensaje" name="texto" cols="30" rows="10"></textarea>
+				<input id="cancelar" type="reset" value="Cancelar" class="contactoInput">
+				<input id="enviar" type="submit" value="Enviar" class="contactoInput">
+			</form>
+		</section> 
+	</main>
+	<!-- Empieza el footer - Igual en todas las páginas -->
+	<footer>
+		<p class="footer">Corsalia - Un mundo donde la fantasía se confunde con la realidad</p>
+		<div>
+			<a href="https://es-la.facebook.com/" target="_blank">
+				<img src="images/facebook.png" alt="Facebook" class="logosRedes">
+			</a>
+			<a href="https://instagram.com/" target="_blank">
+				<img src="images/instagram.png" alt="Instagram" class="logosRedes">
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
