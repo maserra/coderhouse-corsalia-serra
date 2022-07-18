@@ -15,36 +15,27 @@ a{
 /*HEADER*/
 header{
 	width: 100%;
-	background-color: #F2CD88;
 	position: sticky;
 	top: 0px;
 	left: 0px;
 	z-index: 1;
-	display: flex;
-	flex-direction: column;}
+}
 
 #logo{
-	width: 100%;
+	width: 75%;
 }
 
 #logo:hover{
 	transform: scale(1.1,1.1);
 }
 
-header nav ul{
-	display: flex;
-	justify-content: space-evenly;
+.bg-color{
+	background-color: #F2CD88;
 }
 
-header nav ul li{
-	list-style: none;
-	display: inline-block;
-	margin-right: 10px;
-}
-
-header nav ul li a:hover{
-	transform: translate(0, -10px);
-	font-weight: bold;
+.navbar-toggler{
+	position: absolute;
+   right: 15px;
 }
 
 header nav ul li a{
@@ -52,6 +43,11 @@ header nav ul li a{
 	text-decoration: none;
 	font-size: 18px;
 	font-family: 'Almendra SC', serif;
+}
+
+header nav ul li a:hover{
+	transform: translate(0, -10px);
+	font-weight: bold;
 }
 
 /*MAIN*/
@@ -272,13 +268,8 @@ footer div{
 /* media queries */ 
 @media (min-width: 468px){
 	/*HEADER 468*/
-	header a{
-		display:  flex;
-		justify-content: center;
-	}
-	#logo, header nav{
-		width: 80%;
-		margin: 0 auto;
+	#logo{
+		width: 70%;
 	}
 
 	/*Personajes 468*/
@@ -294,8 +285,8 @@ footer div{
 
 @media (min-width: 600px){
 	/*HEADER 600*/
-	#logo, header nav{
-		width: 70%;
+	#logo{
+		width: 60%;
 	}
 
 	/*Index 600*/
@@ -337,26 +328,14 @@ footer div{
 
 @media (min-width: 768px){
 	/*HEADER 768*/
-	header{
-		flex-direction: row;
-	}
-
-	header a{
-		justify-content: flex-start;		
-	}
-
 	#logo{
 		width: 50%;
-		margin: 5px;
 	}
 
-	header nav{
-		display: flex;
-		flex-direction: column-reverse;
-	}
-
-	header nav ul{
-		margin-bottom: 10px;
+	#navbarSupportedContent{
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
 	}
 
 	/*Index 768*/
@@ -404,6 +383,11 @@ footer div{
 }
 
 @media (min-width: 1024px){
+	/*HEADER 1024*/
+	#logo{
+		width: 30%;
+	}
+
 	/*Personajes 1024*/
 	.personajes-contenedor{
 		width: 30%;
