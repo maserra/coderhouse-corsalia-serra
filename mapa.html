@@ -7,7 +7,6 @@
 	<link rel="shortcut icon" href="images/favicon.png">
 	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<!-- Mi css -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -45,7 +44,23 @@
 	<!-- Empieza el main -->
 	<main>
 		<h1>Mapa</h1>
-	</main>
+		<!-- Para cada ciudad un toast diferente -->
+		<div>
+			<img src="images/mapa.jpeg" alt="Mapa de Corsalia" id="liveToastBtn">
+			<!--<button type="button" class="btn btn-primary" id="liveToastBtn"></button>-->
+		</div>
+		<div class="toast-container position-fixed top-xx left-xx p-3">
+			<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Ciudad</small>
+					<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+				</div>
+				<div class="toast-body">
+					Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt tempore, dolor. Eos reiciendis, aspernatur soluta, quaerat repellendus dolores illo adipisci inventore at debitis odio maiores quis odit et nostrum in.
+				</div>
+			</div>
+		</div>
 	<!-- Empieza el footer - Igual en todas las páginas -->
 	<footer>
 		<p class="footer">Corsalia - Un mundo donde la fantasía se confunde con la realidad</p>
@@ -58,5 +73,14 @@
 			</a>
 		</div>
 	</footer>
+	<!-- Script Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script>
+		document.getElementById("liveToastBtn").onclick = function(){
+			let myAlert = document.querySelector('.toast');
+			let bsAlert = new bootstrap.Toast(myAlert);
+			bsAlert.show();
+		}
+	</script>
 </body>
 </html>

@@ -46,7 +46,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-	transform: translate(0, -10px);
+	transform: translate(10px, 0);
 	font-weight: bold;
 }
 
@@ -74,7 +74,7 @@ footer p{
 	width: 100%;
 	text-align: center;
 	color: white;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 footer div{
@@ -134,14 +134,21 @@ footer div{
 
 /*Diccionario*/
 .diccionario-titulo{
-	margin: 20px 10px 5px 10px;
-	padding: 5px;
-	font-size: 24px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1.15rem;
+}
+
+.diccionario-contenedor{
+	width: 85%;
+	margin: 0 auto;
+	padding: 2px 5px;
 }
 
 .diccionario-palabra{
-	margin: 0 10px;
-	padding: 2px 5px;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
 	animation-name: palabra-efecto;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
@@ -149,9 +156,44 @@ footer div{
 	animation-delay: 0;
 }
 
+.list-group{
+	margin-bottom: 10px;
+}
+
+.list-group-item{
+	background-color: #F2F0D8;
+	border: 0;
+	padding: 5px 10px;
+}
+
+.list-group-item.active{
+	background-color: #F2CD88;
+	color: black;
+	border-color: black;
+}
+
 @keyframes palabra-efecto{
    0% {color:#F2F0D8;}
    100%{color: black;}
+}
+
+/*Mapa*/
+#liveToastBtn{
+	width: 100%;
+	padding: 0 5%;
+	margin-bottom: 20px;
+}
+
+#liveToastBtn:hover{
+	cursor: pointer;
+}
+
+.top-xx{
+	top: 45vh;
+}
+
+.left-xx{
+	left: 0;
 }
 
 /*Contacto*/
@@ -277,6 +319,11 @@ footer div{
 		margin: 10px 40px;
 	}
 
+	/*Mapa 468*/
+	.left-xx{
+		left: 10%;
+	}
+
 	/*Contacto 468*/
 	#contacto-contenedor{
 		padding: 40px;
@@ -301,6 +348,11 @@ footer div{
 	/*Personajes 600*/
 	.personajes-contenedor{
 		margin: 10px 60px;
+	}
+
+	/*Mapa 600*/
+	.left-xx{
+		left: 15%;
 	}
 
 	/*Contacto 600*/
@@ -338,6 +390,11 @@ footer div{
 		right: 20px;
 	}
 
+	header nav ul li a:hover{
+		transform: translate(0, -10px);
+	}
+
+
 	/*Index 768*/
 	.index-contenedor{
 		flex-direction: row;
@@ -374,6 +431,25 @@ footer div{
 		margin: 20px 0;
 	}
 
+	/*Diccionario 768*/
+	.diccionario-titulo{
+		width: 40%;
+		margin: 0 1.5% 0 3.5%;
+		font-size: 1.05rem;
+		padding: 0;
+	}
+
+	.diccionario-contenedor{
+		width: 50%;
+		margin: 0 3.5% 0 1.5%;
+		padding: 0;
+	}
+
+	/*Mapa 768*/
+	.left-xx{
+		left: 25%;
+	}
+
 	/*Contacto 768*/
 	#contacto-contenedor{
 		padding: 25px 50px;
@@ -392,6 +468,11 @@ footer div{
 	.personajes-contenedor{
 		width: 30%;
 		margin: 20px 0;
+	}
+
+	/*Mapa 1024*/
+	.left-xx{
+		left: 45%;
 	}
 
 	/*Contacto 1024*/
