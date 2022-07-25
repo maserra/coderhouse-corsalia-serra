@@ -53,7 +53,7 @@ header nav ul li a:hover{
 /*MAIN*/
 main{
 	background-color: #F2F0D8;
-	padding-bottom: 10px;
+	min-height: 76.4vh;
 }
 
 h1{
@@ -108,6 +108,11 @@ footer div{
 	text-align: justify;
 }
 
+#inicial:first-letter{
+	font-size: 2rem;
+	font-family: 'Almendra SC', serif;
+}
+
 /*Personajes*/
 .personajes{
 	display: flex;
@@ -133,6 +138,9 @@ footer div{
 }
 
 /*Diccionario*/
+.row{
+	margin: 0;
+}
 .diccionario-titulo{
 	width: 90%;
 	margin: 0 auto;
@@ -178,14 +186,169 @@ footer div{
 }
 
 /*Mapa*/
-#liveToastBtn{
+#mapa-contenedor{
 	width: 95vw;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(1168,1fr);
+	grid-template-rows: repeat(1600, 1fr);
 	padding: 0 5vw;
 	margin-bottom: 20px;
 }
 
-#liveToastBtn:hover{
+#mapa-contenedor:hover{
 	cursor: pointer;
+}
+
+.mapas{
+	width: 100%;
+}
+
+#corsi{
+   grid-column-start: 1;
+   grid-column-end: 740;
+   grid-row-start: 1;
+   grid-row-end: 401;
+}
+
+#zarlos{
+   grid-column-start: 740;
+   grid-column-end: 1168;
+   grid-row-start: 1;
+   grid-row-end: 470;
+}
+
+#tirobasia{
+   grid-column-start: 1;
+   grid-column-end: 481;
+   grid-row-start: 400;
+   grid-row-end: 801;
+}
+
+#farsing-1{
+   grid-column-start: 481;
+   grid-column-end: 740;
+   grid-row-start: 400;
+   grid-row-end: 470;
+}
+
+#farsing-2{
+   grid-column-start: 481;
+   grid-column-end: 1168;
+   grid-row-start: 470;
+   grid-row-end: 751;
+}
+
+#ramasia-1{
+   grid-column-start: 481;
+   grid-column-end: 1168;
+   grid-row-start: 750;
+   grid-row-end: 800;
+}
+
+#ramasia-2{
+   grid-column-start: 619;
+   grid-column-end: 1168;
+   grid-row-start: 800;
+   grid-row-end: 960;
+}
+
+#ramasia-3{
+   grid-column-start: 730;
+   grid-column-end: 1168;
+   grid-row-start: 960;
+   grid-row-end: 1060;
+}
+
+#ramasia-4{
+   grid-column-start: 797;
+   grid-column-end: 1168;
+   grid-row-start: 1059;
+   grid-row-end: 1161;
+}
+
+#climania-1{
+   grid-column-start: 1;
+   grid-column-end: 460;
+   grid-row-start: 800;
+   grid-row-end: 1150;
+}
+
+#climania-2{
+   grid-column-start: 460;
+   grid-column-end: 621;
+   grid-row-start: 800;
+   grid-row-end: 961;
+}
+
+#origamia-1{
+	grid-column-start: 1;
+   grid-column-end: 471;
+   grid-row-start: 1149;
+   grid-row-end: 1600;
+}
+
+#origamia-2{
+	grid-column-start: 469;
+   grid-column-end: 551;
+   grid-row-start: 1257;
+   grid-row-end: 1600;
+}
+
+#chiluana-1{
+	grid-column-start: 459;
+   grid-column-end: 580;
+   grid-row-start: 959;
+   grid-row-end: 1150;
+}
+
+#chiluana-2{
+	grid-column-start: 579;
+   grid-column-end: 691;
+   grid-row-start: 960;
+   grid-row-end: 1211;
+}
+
+#chiluana-3{
+	grid-column-start: 689;
+   grid-column-end: 731;
+   grid-row-start: 960;
+   grid-row-end: 1111;
+}
+
+#chiluana-4{
+	grid-column-start: 470;
+   grid-column-end: 580;
+   grid-row-start: 1150;
+   grid-row-end: 1260;
+}
+
+#girasolandia-1{
+	grid-column-start: 597;
+   grid-column-end: 1168;
+   grid-row-start: 1160;
+   grid-row-end: 1600;
+}
+
+#girasolandia-2{
+	grid-column-start: 579;
+   grid-column-end: 598;
+   grid-row-start: 1210;
+   grid-row-end: 1261;
+}
+
+#girasolandia-3{
+	grid-column-start: 547;
+   grid-column-end: 631;
+   grid-row-start: 1257;
+   grid-row-end: 1600;
+}
+
+#girasolandia-4{
+	grid-column-start: 688;
+   grid-column-end: 798;
+   grid-row-start: 1059;
+   grid-row-end: 1161;
 }
 
 .top-xx{
