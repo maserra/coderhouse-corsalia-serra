@@ -1,0 +1,244 @@
+#contacto-contenedor{
+	padding: 10px 20px;
+	display: grid;
+    grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(3, 40px) 30px repeat(4, 20px) repeat(5, 40px);
+	grid-template-areas: 
+	"name-label name"
+	"correo-label correo"
+	"cel-label cel"
+	"pedido pedido"
+	"pedido pedido"
+	"pedido pedido"
+	"pedido pedido"
+	"pedido pedido"
+	"comentario comentario"
+	"mensaje mensaje"
+	"mensaje mensaje"
+	"mensaje mensaje"
+	"cancelar enviar";
+	grid-row-gap: 10px;
+}	
+
+#name-label{
+	grid-area: name-label;
+	align-self: center;
+}
+
+#name{
+	grid-area: name;
+}
+
+#correo-label{
+	grid-area: correo-label;
+	align-self: center;
+}
+
+#correo{
+	grid-area: correo;
+}
+
+#cel-label{
+	grid-area: cel-label;
+	align-self: center;
+}
+
+#pedido{
+	grid-area: pedido;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: 30px repeat(4, 20px);
+	grid-template-areas:
+	"legend legend"
+	"libro-label libro"
+	"local-label local"
+	"casa-label casa"
+	"provincia-label provincia";
+	grid-row-gap: 10px;
+	align-items: center;
+}
+
+#legend{
+	grid-area: legend;
+	align-self: start;
+}
+
+#comentario{
+	grid-area: comentario;
+	align-self: end;
+	margin-bottom: 0;
+}
+
+#mensaje{
+	grid-area: mensaje;
+}
+
+#cancelar{
+	grid-area: cancelar;
+	width: 80%;
+	justify-self: center;
+}
+
+#enviar{
+	grid-area: enviar;
+	width: 80%;
+	justify-self: center;
+}
+
+#libro-label{
+	grid-area: libro-label;
+}
+
+#libro{
+	grid-area: libro;
+	justify-self: start;
+}
+
+#local-label{
+	grid-area: local-label;
+}
+
+#local{
+	grid-area: local;
+	justify-self: start;
+}
+
+#casa-label{
+	grid-area: casa-label;
+}
+
+#casa{
+	grid-area: casa;
+	justify-self: start;
+}
+
+#provincia-label{
+	grid-area: provincia-label;
+}
+
+#provincia{
+	grid-area: provincia;
+	justify-self: start;
+	width: 100%;
+}
+
+#contacto-foto{
+	grid-area: foto;
+}
+
+@media (min-width: 468px){
+	#contacto-contenedor{
+		padding: 40px;
+	}
+}
+
+@media (min-width: 600px){
+	#contacto-contenedor{
+		padding: 25px 30px;
+		grid-template-columns: repeat(2, 30%) repeat(2, 20%);
+		grid-template-areas: 
+		"name-label name foto foto"
+		"correo-label correo foto foto"
+		"cel-label cel foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"comentario comentario foto foto"
+		"mensaje mensaje mensaje mensaje"
+		"mensaje mensaje mensaje mensaje"
+		"mensaje mensaje mensaje mensaje"
+		"cancelar cancelar enviar enviar";
+	}
+
+	#contacto-foto{
+		height: 300px;
+		justify-self: center;
+	}
+
+	#comentario{
+		justify-self: center;
+		align-self: end;
+	}
+
+	#cancelar{
+		width: 40%;
+	}
+
+	#enviar{
+		width: 60%;
+	}
+
+}
+
+@media (min-width: 768px){
+	#contacto-contenedor{
+		grid-template-columns: repeat(2, 25%) repeat(2, 19%);
+		grid-template-rows: repeat(3, 40px) 30px repeat(4, 20px) repeat(4, 40px);
+		grid-template-areas: 
+		"name-label name foto foto"
+		"correo-label correo foto foto"
+		"cel-label cel foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"comentario comentario foto foto"
+		"mensaje mensaje foto foto"
+		"mensaje mensaje foto foto"
+		"cancelar enviar foto foto";
+		grid-column-gap: 4%;
+	}
+
+	#contacto-foto{
+		height: 490px;
+	}
+
+	#cancelar{
+		width: 50%;
+	}
+
+	#enviar{
+		width: 50%;
+	}
+}
+
+@media (min-width: 1024px){
+	#contacto-contenedor{
+		grid-template-rows: repeat(3, 40px) 30px repeat(3, 20px) repeat(4, 40px);
+		grid-template-areas: 
+		"name-label name foto foto"
+		"correo-label correo foto foto"
+		"cel-label cel foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"pedido pedido foto foto"
+		"comentario comentario foto foto"
+		"mensaje mensaje foto foto"
+		"mensaje mensaje foto foto"
+		"cancelar enviar foto foto";
+		padding: 20px 50px;
+	}
+
+	#pedido{
+		grid-template-columns: 35% 5% 21% 25%;
+		grid-template-rows: 30px repeat(3, 20px);
+		grid-template-areas:
+		"legend legend legend legend"
+		"libro-label libro libro libro"
+		"local-label local local local"
+		"casa-label casa provincia-label provincia";
+		column-gap: 3%;
+	}
+
+	#provincia-label{
+		justify-self: end;
+	}
+
+	#contacto-foto{
+		height: 470px;
+	}
+}

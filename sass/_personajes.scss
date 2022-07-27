@@ -1,0 +1,54 @@
+.personajes{
+	display: flex;
+	flex-direction: column;
+}
+
+.personajes-contenedor{
+	margin: 5px 20px;
+}
+
+.personajes-titulo{
+	text-align: center;
+	transition: all 1s;
+    &hover{
+	    transform: scale(1.5,1.5) translate(0, -10px);
+    }
+}
+
+.personajes-foto{
+	width: 100%;
+
+}
+
+@media (min-width: 468px){
+	.personajes-contenedor{
+		margin: 10px 40px;
+	}
+}
+
+@media (min-width: 600px){
+	.personajes-contenedor{
+		margin: 10px 60px;
+	}
+}
+
+@media (min-width: 768px){
+	.personajes{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly; 
+	}
+	
+	.personajes-contenedor{
+		width: 40%;
+		margin: 20px 0;
+	}
+}
+
+@media (min-width: 1024px){
+	.personajes-contenedor{
+		width: 30%;
+		margin: 20px 0;
+	}
+}

@@ -1,0 +1,59 @@
+.index-contenedor{
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+}
+
+.fotos{
+	width: $widthIndexSm;
+	margin: $marginIndexCell;
+}
+
+.parrafos{
+	width: $widthIndexSm;
+	margin: $marginIndexCell;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+#inicial{
+	&first-letter{
+		font-size: 2rem;
+		font-family: $secondaryFont;
+	}
+}
+
+@media (min-width: 600px){
+	.fotos{
+		width: $widthIndex;
+	}
+
+	.parrafos{
+		width: $widthIndex;
+	}
+}
+
+@media (min-width: 768px){
+	.index-contenedor{
+		flex-direction: row;
+		align-items: center;
+		padding: $paddingIndex;
+	}
+
+	.index-contenedor-2{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		padding: $paddingIndex;
+	}
+
+	.fotos{
+		width: 30%;
+		margin: $marginIndexDesk;
+	}
+
+	.parrafos{
+		margin: $marginIndexDesk;
+	}
+}
