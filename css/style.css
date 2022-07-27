@@ -506,6 +506,10 @@ footer div {
   align-self: center;
 }
 
+#cel {
+  grid-area: cel;
+}
+
 #pedido {
   grid-area: pedido;
   display: grid;
@@ -582,6 +586,7 @@ footer div {
 
 #contacto-foto {
   grid-area: foto;
+  display: none;
 }
 
 @media (min-width: 468px) {
@@ -598,6 +603,7 @@ footer div {
   #contacto-foto {
     height: 300px;
     justify-self: center;
+    display: inline;
   }
   #comentario {
     justify-self: center;
