@@ -1,0 +1,15 @@
+Cambié los title de las páginas para que cada una tenga un title diferente.
+
+Agregué estas descriptions:
+	- Corsalia - Un mundo donde la fantasía se confunde con la realidad.
+	- Con este diccionario vas a poder entender los libros sagrados de Corsalia.
+	- Estos son los personajes más importantes del mundo de Corsalia. Aquí vas a tener la historia de cada uno de ellos.
+	- Con este mapa de Corsalia vas a poder ubicarte en cualquier región del territorio.
+	- Ponete en contacto con nosotros y no te olvides de comprar el libro de Corsalia, donde vas a encontrar toda la información de su mundo.
+
+Agregué estas keywords:
+	- Corsalia, Mundo, Libros, Sagrados, Corsalons, Magia, Fantasía
+	- Diccionario, One, Sne, Vide, Al
+	- Aerofanos, Yagos, Agonifico, Hegromid, Bnar, Sney
+	- Corsi, Zarlos, Tirobasia, Farsing, Ramasia, Climania, Origamia, Chiluana, Girasolandia
+	- Corsalia, Libro, Contacto, Comprar, Fantasía

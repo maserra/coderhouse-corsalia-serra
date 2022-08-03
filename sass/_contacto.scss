@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 50%);
 	grid-template-rows: repeat(3, 40px) 30px repeat(4, 20px) repeat(5, 40px);
 	grid-template-areas: 
-	"name-label name"
+	"nombre-label nombre"
 	"correo-label correo"
 	"cel-label cel"
 	"pedido pedido"
@@ -20,42 +20,39 @@
 	grid-row-gap: 10px;
 }	
 
-#name-label{
-	grid-area: name-label;
-	align-self: center;
+#nombre-label{
+	@include grid(nombre-label);
 }
 
-#name{
-	grid-area: name;
+#nombre{
+	@include grid(nombre);
 }
 
 #correo-label{
-	grid-area: correo-label;
-	align-self: center;
+	@include grid(correo-label);
 }
 
 #correo{
-	grid-area: correo;
+	@include grid(correo);
 }
 
 #cel-label{
-	grid-area: cel-label;
-	align-self: center;
+	@include grid(cel-label, center);
 }
 
 #cel{
-	grid-area: cel;
+	@include grid(cel);
 }
 
 #pedido{
-	grid-area: pedido;
+	@include grid(pedido);
 	display: grid;
 	grid-template-columns: 60% 40%;
 	grid-template-rows: 30px repeat(4, 20px);
 	grid-template-areas:
 	"legend legend"
 	"libro-label libro"
-	"local-label local"
+	"retiro-label retiro"
 	"casa-label casa"
 	"provincia-label provincia";
 	grid-row-gap: 10px;
@@ -63,71 +60,60 @@
 }
 
 #legend{
-	grid-area: legend;
-	align-self: start;
+	@include grid(legend, start);
 }
 
 #comentario{
-	grid-area: comentario;
-	align-self: end;
+	@include grid(comentario, end);
 	margin-bottom: 0;
 }
 
 #mensaje{
-	grid-area: mensaje;
+	@include grid(mensaje);
 }
 
 #cancelar{
-	grid-area: cancelar;
-	width: 80%;
-	justify-self: center;
+	@include grid(cancelar, center, 80%);
 }
 
 #enviar{
-	grid-area: enviar;
-	width: 80%;
-	justify-self: center;
+	@include grid(enviar, center, 80%);
 }
 
 #libro-label{
-	grid-area: libro-label;
+	@include grid(libro-label);
 }
 
 #libro{
-	grid-area: libro;
-	justify-self: start;
+	@include grid(libro, start);
 }
 
-#local-label{
-	grid-area: local-label;
+#retiro-label{
+	@include grid(retiro-label);
 }
 
-#local{
-	grid-area: local;
-	justify-self: start;
+#retiro{
+	@include grid(retiro, start);
 }
 
 #casa-label{
-	grid-area: casa-label;
+	@include grid(casa-label);
 }
 
 #casa{
-	grid-area: casa;
-	justify-self: start;
+	@include grid(casa, start);
 }
 
 #provincia-label{
-	grid-area: provincia-label;
+	@include grid(provincia-label);
 }
 
 #provincia{
-	grid-area: provincia;
-	justify-self: start;
-	width: 100%;
+	@include grid(provincia, start, 100%);
 }
 
 #contacto-foto{
-	grid-area: foto;
+	@include grid(foto);
 	display: none;
 }
 
@@ -142,7 +128,7 @@
 		padding: 25px 30px;
 		grid-template-columns: repeat(2, 30%) repeat(2, 20%);
 		grid-template-areas: 
-		"name-label name foto foto"
+		"nombre-label nombre foto foto"
 		"correo-label correo foto foto"
 		"cel-label cel foto foto"
 		"pedido pedido foto foto"
@@ -184,7 +170,7 @@
 		grid-template-columns: repeat(2, 25%) repeat(2, 19%);
 		grid-template-rows: repeat(3, 40px) 30px repeat(4, 20px) repeat(4, 40px);
 		grid-template-areas: 
-		"name-label name foto foto"
+		"nombre-label nombre foto foto"
 		"correo-label correo foto foto"
 		"cel-label cel foto foto"
 		"pedido pedido foto foto"
@@ -212,11 +198,12 @@
 	}
 }
 
+/*Media Queries Contacto*/
 @media (min-width: 1024px){
 	#contacto-contenedor{
 		grid-template-rows: repeat(3, 40px) 30px repeat(3, 20px) repeat(4, 40px);
 		grid-template-areas: 
-		"name-label name foto foto"
+		"nombre-label nombre foto foto"
 		"correo-label correo foto foto"
 		"cel-label cel foto foto"
 		"pedido pedido foto foto"
@@ -236,7 +223,7 @@
 		grid-template-areas:
 		"legend legend legend legend"
 		"libro-label libro libro libro"
-		"local-label local local local"
+		"retiro-label retiro retiro retiro"
 		"casa-label casa provincia-label provincia";
 		column-gap: 3%;
 	}

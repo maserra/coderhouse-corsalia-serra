@@ -4,6 +4,10 @@
 	padding: 40px 0;
 }
 
+.index-contenedor-2{
+	@extend .index-contenedor;
+}
+
 .fotos{
 	width: $widthIndexSm;
 	margin: $marginIndexCell;
@@ -12,18 +16,19 @@
 .parrafos{
 	width: $widthIndexSm;
 	margin: $marginIndexCell;
-	font-size: 15px;
+	font-size: map-get($sizeLetra, texto);
 	line-height: 20px;
 	text-align: justify;
 }
 
 #inicial{
 	&first-letter{
-		font-size: 2rem;
+		font-size: map-get($sizeLetra, titulo);;
 		font-family: $secondaryFont;
 	}
 }
 
+/*Media Queries Index*/
 @media (min-width: 600px){
 	.fotos{
 		width: $widthIndex;
@@ -42,10 +47,7 @@
 	}
 
 	.index-contenedor-2{
-		display: flex;
 		flex-direction: row-reverse;
-		align-items: center;
-		padding: $paddingIndex;
 	}
 
 	.fotos{

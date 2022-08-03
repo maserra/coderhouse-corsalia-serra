@@ -4,7 +4,7 @@
 .diccionario-titulo{
 	width: 90%;
 	margin: 0 auto;
-	font-size: 1.15rem;
+	font-size: map-get($sizeLetra, dic-desktop);
 }
 
 .diccionario-contenedor{
@@ -16,7 +16,7 @@
 .diccionario-palabra{
 	margin: 0;
 	padding: 0;
-	font-size: 1rem;
+	font-size: map-get($sizeLetra, texto);
 	animation-name: palabra-efecto;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
@@ -40,16 +40,23 @@
 	border-color: $black;
 }
 
+.separador{
+	@extend .diccionario-palabra;
+	font-size: map-get($sizeLetra, separador);
+	text-decoration-line: underline;
+}
+
 @keyframes palabra-efecto{
    0% {color: $colorYellow;}
    100%{color: $black;}
 }
 
+/*Media Queries Diccionario*/
 @media (min-width: 768px){
 	.diccionario-titulo{
 		width: 40%;
 		margin: 0 1.5% 0 3.5%;
-		font-size: 1.05rem;
+		font-size: map-get($sizeLetra, dic-mobile);
 		padding: 0;
 	}
 

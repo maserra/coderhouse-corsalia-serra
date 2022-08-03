@@ -6,7 +6,7 @@
 	grid-template-rows: repeat(1600, 1fr);
 	padding: 0 5vw;
 	margin-bottom: 20px;
-    &hover{
+    &:hover{
         cursor: pointer;
     }
 }
@@ -16,150 +16,87 @@
 }
 
 #corsi{
-    grid-column-start: 1;
-    grid-column-end: 740;
-    grid-row-start: 1;
-    grid-row-end: 401;
+    @include mapa(1, 740, 1, 401);
 }
 
 #zarlos{
-    grid-column-start: 740;
-    grid-column-end: 1168;
-    grid-row-start: 1;
-    grid-row-end: 470;
+    @include mapa(740, 1168, 1, 471);
 }
 
 #tirobasia{
-    grid-column-start: 1;
-    grid-column-end: 481;
-    grid-row-start: 400;
-    grid-row-end: 801;
+    @include mapa(1, 481, 400, 801);
 }
 
 #farsing-1{
-    grid-column-start: 481;
-    grid-column-end: 740;
-    grid-row-start: 400;
-    grid-row-end: 470;
+    @include mapa(481, 740, 400, 470);
 }
 
 #farsing-2{
-    grid-column-start: 481;
-    grid-column-end: 1168;
-    grid-row-start: 470;
-    grid-row-end: 751;
+    @include mapa(481, 1168, 470, 751);
 }
 
 #ramasia-1{
-    grid-column-start: 481;
-    grid-column-end: 1168;
-    grid-row-start: 750;
-    grid-row-end: 800;
+    @include mapa(481, 1168, 750, 800);
 }
 
 #ramasia-2{
-    grid-column-start: 619;
-    grid-column-end: 1168;
-    grid-row-start: 800;
-    grid-row-end: 960;
+    @include mapa(619, 1168, 800, 960);
 }
 
 #ramasia-3{
-    grid-column-start: 730;
-    grid-column-end: 1168;
-    grid-row-start: 960;
-    grid-row-end: 1060;
+    @include mapa(730, 1168, 960, 1060);
 }
 
 #ramasia-4{
-    grid-column-start: 797;
-    grid-column-end: 1168;
-    grid-row-start: 1059;
-    grid-row-end: 1161;
+    @include mapa(797, 1168, 1059, 1161);
 }
 
 #climania-1{
-    grid-column-start: 1;
-    grid-column-end: 460;
-    grid-row-start: 800;
-    grid-row-end: 1150;
+    @include mapa(1, 460, 800, 1150);
 }
 
 #climania-2{
-    grid-column-start: 460;
-    grid-column-end: 621;
-    grid-row-start: 800;
-    grid-row-end: 961;
+    @include mapa(460, 621, 800, 961);
 }
 
 #origamia-1{
-	grid-column-start: 1;
-    grid-column-end: 471;
-    grid-row-start: 1149;
-    grid-row-end: 1600;
+    @include mapa(1, 471, 1149, 1600);
 }
 
 #origamia-2{
-	grid-column-start: 469;
-    grid-column-end: 551;
-    grid-row-start: 1257;
-    grid-row-end: 1600;
+    @include mapa(469, 551, 1257, 1600);
 }
 
 #chiluana-1{
-	grid-column-start: 459;
-    grid-column-end: 580;
-    grid-row-start: 959;
-    grid-row-end: 1150;
+	@include mapa(459, 580, 959, 1150);
 }
 
 #chiluana-2{
-	grid-column-start: 579;
-    grid-column-end: 691;
-    grid-row-start: 960;
-    grid-row-end: 1211;
+    @include mapa(579, 691, 960, 1211);
 }
 
 #chiluana-3{
-	grid-column-start: 689;
-    grid-column-end: 731;
-    grid-row-start: 960;
-    grid-row-end: 1111;
+    @include mapa(689, 731, 960, 1111);
 }
 
 #chiluana-4{
-	grid-column-start: 470;
-    grid-column-end: 580;
-    grid-row-start: 1150;
-    grid-row-end: 1260;
+    @include mapa(470, 580, 1150, 1260);
 }
 
 #girasolandia-1{
-	grid-column-start: 597;
-    grid-column-end: 1168;
-    grid-row-start: 1160;
-    grid-row-end: 1600;
+    @include mapa(597, 1168, 1160, 1600);
 }
 
 #girasolandia-2{
-	grid-column-start: 579;
-    grid-column-end: 598;
-    grid-row-start: 1210;
-    grid-row-end: 1261;
+    @include mapa(579, 598, 1210, 1261);
 }
 
 #girasolandia-3{
-	grid-column-start: 547;
-    grid-column-end: 631;
-    grid-row-start: 1257;
-    grid-row-end: 1600;
+    @include mapa(547, 631, 1257, 1600);
 }
 
 #girasolandia-4{
-	grid-column-start: 688;
-    grid-column-end: 798;
-    grid-row-start: 1059;
-    grid-row-end: 1161;
+    @include mapa(688, 798, 1059, 1161);
 }
 
 .top-xx{
@@ -170,6 +107,7 @@
 	left: 0;
 }
 
+/*Media Queries Mapa*/
 @media (min-width: 468px){
 	.left-xx{
 		left: 10%;

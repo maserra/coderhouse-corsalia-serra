@@ -11,6 +11,16 @@ $white: white;
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Roboto&display=swap');
 $mainFont: 'Roboto', sans-serif;
 $secondaryFont: 'Almendra SC', serif;
+$sizeLetra:(
+    titulo: 2rem,
+    subtitulo: 1.5rem,
+    dic-desktop: 1.15rem,
+    dic-mobile: 1.05rem,
+    separador: 1.25rem,
+    texto: 1rem,
+    header: 1.2rem,
+    footer: 0.8rem,
+);
 
 //Paddings
 $paddingIndex: 5px 30px;
@@ -22,3 +32,17 @@ $marginIndexDesk: 10px;
 //Widths
 $widthIndexSm: 90%;
 $widthIndex: 80%;
+
+//Grids
+@mixin grid($area, $align:auto, $width:auto){
+    grid-area: $area;
+    align-self: $align;
+    width: $width;
+}
+
+@mixin mapa($cs, $ce, $rs, $re){
+    grid-column-start: $cs;
+    grid-column-end: $ce;
+    grid-row-start: $rs;
+    grid-row-end: $re;
+}

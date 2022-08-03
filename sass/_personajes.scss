@@ -10,7 +10,7 @@
 .personajes-titulo{
 	text-align: center;
 	transition: all 1s;
-    &hover{
+    &:hover{
 	    transform: scale(1.5,1.5) translate(0, -10px);
     }
 }
@@ -20,6 +20,7 @@
 
 }
 
+/*Media Queries Personajes*/
 @media (min-width: 468px){
 	.personajes-contenedor{
 		margin: 10px 40px;

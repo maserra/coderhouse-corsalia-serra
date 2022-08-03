@@ -17,8 +17,10 @@ main {
 h1 {
   padding: 10px;
   text-align: center;
+  font-family: "Almendra SC", serif;
 }
 
+/*Header*/
 header {
   width: 100%;
   position: -webkit-sticky;
@@ -29,10 +31,9 @@ header {
 }
 header nav ul li a {
   color: black;
-  font-size: 18px;
   font-family: "Almendra SC", serif;
 }
-header nav ul li ahover {
+header nav ul li a:hover {
   transform: translate(10px, 0);
   font-weight: bold;
 }
@@ -40,7 +41,7 @@ header nav ul li ahover {
 #logo {
   width: 75%;
 }
-#logohover {
+#logo:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -51,8 +52,40 @@ header nav ul li ahover {
 .navbar-toggler {
   position: absolute;
   right: 15px;
+  top: 30px;
 }
 
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  background-color: #585C73;
+  padding: 5px 0;
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+footer div {
+  width: 100%;
+  text-align: center;
+}
+
+.logosRedes {
+  height: 24px;
+  margin: 0 5px;
+}
+.logosRedes:hover {
+  cursor: pointer;
+}
+
+/*Media Queries Header y Footer*/
 @media (min-width: 468px) {
   #logo {
     width: 70%;
@@ -72,7 +105,7 @@ header nav ul li ahover {
     bottom: 10px;
     right: 20px;
   }
-  header nav ul li ahover {
+  header nav ul li a:hover {
     transform: translate(0, -10px);
   }
 }
@@ -81,29 +114,8 @@ header nav ul li ahover {
     width: 30%;
   }
 }
-footer {
-  width: 100%;
-  background-color: #585C73;
-  padding: 5px 0;
-}
-footer p {
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-footer div {
-  width: 100%;
-  text-align: center;
-}
-
-.logosRedes {
-  height: 24px;
-  margin: 0 5px;
-}
-
-.index-contenedor {
+/*Index*/
+.index-contenedor, .index-contenedor-2 {
   display: flex;
   flex-direction: column;
   padding: 40px 0;
@@ -117,7 +129,7 @@ footer div {
 .parrafos {
   width: 90%;
   margin: 10px auto;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 20px;
   text-align: justify;
 }
@@ -127,6 +139,7 @@ footer div {
   font-family: "Almendra SC", serif;
 }
 
+/*Media Queries Index*/
 @media (min-width: 600px) {
   .fotos {
     width: 80%;
@@ -136,16 +149,13 @@ footer div {
   }
 }
 @media (min-width: 768px) {
-  .index-contenedor {
+  .index-contenedor, .index-contenedor-2 {
     flex-direction: row;
     align-items: center;
     padding: 5px 30px;
   }
   .index-contenedor-2 {
-    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    padding: 5px 30px;
   }
   .fotos {
     width: 30%;
@@ -155,6 +165,7 @@ footer div {
     margin: 10px;
   }
 }
+/*Personajes*/
 .personajes {
   display: flex;
   flex-direction: column;
@@ -168,7 +179,7 @@ footer div {
   text-align: center;
   transition: all 1s;
 }
-.personajes-titulohover {
+.personajes-titulo:hover {
   transform: scale(1.5, 1.5) translate(0, -10px);
 }
 
@@ -176,6 +187,7 @@ footer div {
   width: 100%;
 }
 
+/*Media Queries Personajes*/
 @media (min-width: 468px) {
   .personajes-contenedor {
     margin: 10px 40px;
@@ -204,6 +216,7 @@ footer div {
     margin: 20px 0;
   }
 }
+/*Diccionario*/
 .row {
   margin: 0;
 }
@@ -220,7 +233,7 @@ footer div {
   padding: 2px 5px;
 }
 
-.diccionario-palabra {
+.diccionario-palabra, .separador {
   margin: 0;
   padding: 0;
   font-size: 1rem;
@@ -252,6 +265,12 @@ footer div {
   border-color: black;
 }
 
+.separador {
+  font-size: 1.25rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 @-webkit-keyframes palabra-efecto {
   0% {
     color: #F1E1AE;
@@ -269,6 +288,7 @@ footer div {
     color: black;
   }
 }
+/*Media Queries Diccionario*/
 @media (min-width: 768px) {
   .diccionario-titulo {
     width: 40%;
@@ -282,6 +302,7 @@ footer div {
     padding: 0;
   }
 }
+/*Mapa*/
 #mapa-contenedor {
   width: 95vw;
   margin: 20px auto;
@@ -291,7 +312,7 @@ footer div {
   padding: 0 5vw;
   margin-bottom: 20px;
 }
-#mapa-contenedorhover {
+#mapa-contenedor:hover {
   cursor: pointer;
 }
 
@@ -310,7 +331,7 @@ footer div {
   grid-column-start: 740;
   grid-column-end: 1168;
   grid-row-start: 1;
-  grid-row-end: 470;
+  grid-row-end: 471;
 }
 
 #tirobasia {
@@ -454,6 +475,7 @@ footer div {
   left: 0;
 }
 
+/*Media Queries Mapa*/
 @media (min-width: 468px) {
   .left-xx {
     left: 10%;
@@ -474,48 +496,60 @@ footer div {
     left: 45%;
   }
 }
+/*Contacto*/
 #contacto-contenedor {
   padding: 10px 20px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(3, 40px) 30px repeat(4, 20px) repeat(5, 40px);
-  grid-template-areas: "name-label name" "correo-label correo" "cel-label cel" "pedido pedido" "pedido pedido" "pedido pedido" "pedido pedido" "pedido pedido" "comentario comentario" "mensaje mensaje" "mensaje mensaje" "mensaje mensaje" "cancelar enviar";
+  grid-template-areas: "nombre-label nombre" "correo-label correo" "cel-label cel" "pedido pedido" "pedido pedido" "pedido pedido" "pedido pedido" "pedido pedido" "comentario comentario" "mensaje mensaje" "mensaje mensaje" "mensaje mensaje" "cancelar enviar";
   grid-row-gap: 10px;
 }
 
-#name-label {
-  grid-area: name-label;
-  align-self: center;
+#nombre-label {
+  grid-area: nombre-label;
+  align-self: auto;
+  width: auto;
 }
 
-#name {
-  grid-area: name;
+#nombre {
+  grid-area: nombre;
+  align-self: auto;
+  width: auto;
 }
 
 #correo-label {
   grid-area: correo-label;
-  align-self: center;
+  align-self: auto;
+  width: auto;
 }
 
 #correo {
   grid-area: correo;
+  align-self: auto;
+  width: auto;
 }
 
 #cel-label {
   grid-area: cel-label;
   align-self: center;
+  width: auto;
 }
 
 #cel {
   grid-area: cel;
+  align-self: auto;
+  width: auto;
 }
 
 #pedido {
   grid-area: pedido;
+  align-self: auto;
+  width: auto;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 30px repeat(4, 20px);
-  grid-template-areas: "legend legend" "libro-label libro" "local-label local" "casa-label casa" "provincia-label provincia";
+  grid-template-areas: "legend legend" "libro-label libro" "retiro-label retiro" "casa-label casa" "provincia-label provincia";
   grid-row-gap: 10px;
   align-items: center;
 }
@@ -523,69 +557,86 @@ footer div {
 #legend {
   grid-area: legend;
   align-self: start;
+  width: auto;
 }
 
 #comentario {
   grid-area: comentario;
   align-self: end;
+  width: auto;
   margin-bottom: 0;
 }
 
 #mensaje {
   grid-area: mensaje;
+  align-self: auto;
+  width: auto;
 }
 
 #cancelar {
   grid-area: cancelar;
+  align-self: center;
   width: 80%;
-  justify-self: center;
 }
 
 #enviar {
   grid-area: enviar;
+  align-self: center;
   width: 80%;
-  justify-self: center;
 }
 
 #libro-label {
   grid-area: libro-label;
+  align-self: auto;
+  width: auto;
 }
 
 #libro {
   grid-area: libro;
-  justify-self: start;
+  align-self: start;
+  width: auto;
 }
 
-#local-label {
-  grid-area: local-label;
+#retiro-label {
+  grid-area: retiro-label;
+  align-self: auto;
+  width: auto;
 }
 
-#local {
-  grid-area: local;
-  justify-self: start;
+#retiro {
+  grid-area: retiro;
+  align-self: start;
+  width: auto;
 }
 
 #casa-label {
   grid-area: casa-label;
+  align-self: auto;
+  width: auto;
 }
 
 #casa {
   grid-area: casa;
-  justify-self: start;
+  align-self: start;
+  width: auto;
 }
 
 #provincia-label {
   grid-area: provincia-label;
+  align-self: auto;
+  width: auto;
 }
 
 #provincia {
   grid-area: provincia;
-  justify-self: start;
+  align-self: start;
   width: 100%;
 }
 
 #contacto-foto {
   grid-area: foto;
+  align-self: auto;
+  width: auto;
   display: none;
 }
 
@@ -598,7 +649,7 @@ footer div {
   #contacto-contenedor {
     padding: 25px 30px;
     grid-template-columns: repeat(2, 30%) repeat(2, 20%);
-    grid-template-areas: "name-label name foto foto" "correo-label correo foto foto" "cel-label cel foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "comentario comentario foto foto" "mensaje mensaje mensaje mensaje" "mensaje mensaje mensaje mensaje" "mensaje mensaje mensaje mensaje" "cancelar cancelar enviar enviar";
+    grid-template-areas: "nombre-label nombre foto foto" "correo-label correo foto foto" "cel-label cel foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "comentario comentario foto foto" "mensaje mensaje mensaje mensaje" "mensaje mensaje mensaje mensaje" "mensaje mensaje mensaje mensaje" "cancelar cancelar enviar enviar";
   }
   #contacto-foto {
     height: 300px;
@@ -620,7 +671,7 @@ footer div {
   #contacto-contenedor {
     grid-template-columns: repeat(2, 25%) repeat(2, 19%);
     grid-template-rows: repeat(3, 40px) 30px repeat(4, 20px) repeat(4, 40px);
-    grid-template-areas: "name-label name foto foto" "correo-label correo foto foto" "cel-label cel foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "comentario comentario foto foto" "mensaje mensaje foto foto" "mensaje mensaje foto foto" "cancelar enviar foto foto";
+    grid-template-areas: "nombre-label nombre foto foto" "correo-label correo foto foto" "cel-label cel foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "comentario comentario foto foto" "mensaje mensaje foto foto" "mensaje mensaje foto foto" "cancelar enviar foto foto";
     grid-column-gap: 4%;
   }
   #contacto-foto {
@@ -633,16 +684,17 @@ footer div {
     width: 50%;
   }
 }
+/*Media Queries Contacto*/
 @media (min-width: 1024px) {
   #contacto-contenedor {
     grid-template-rows: repeat(3, 40px) 30px repeat(3, 20px) repeat(4, 40px);
-    grid-template-areas: "name-label name foto foto" "correo-label correo foto foto" "cel-label cel foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "comentario comentario foto foto" "mensaje mensaje foto foto" "mensaje mensaje foto foto" "cancelar enviar foto foto";
+    grid-template-areas: "nombre-label nombre foto foto" "correo-label correo foto foto" "cel-label cel foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "pedido pedido foto foto" "comentario comentario foto foto" "mensaje mensaje foto foto" "mensaje mensaje foto foto" "cancelar enviar foto foto";
     padding: 20px 50px;
   }
   #pedido {
     grid-template-columns: 35% 5% 21% 25%;
     grid-template-rows: 30px repeat(3, 20px);
-    grid-template-areas: "legend legend legend legend" "libro-label libro libro libro" "local-label local local local" "casa-label casa provincia-label provincia";
+    grid-template-areas: "legend legend legend legend" "libro-label libro libro libro" "retiro-label retiro retiro retiro" "casa-label casa provincia-label provincia";
     -moz-column-gap: 3%;
          column-gap: 3%;
   }
