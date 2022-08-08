@@ -13,3 +13,7 @@ Agregué estas keywords:
 	- Aerofanos, Yagos, Agonifico, Hegromid, Bnar, Sney
 	- Corsi, Zarlos, Tirobasia, Farsing, Ramasia, Climania, Origamia, Chiluana, Girasolandia
 	- Corsalia, Libro, Contacto, Comprar, Fantasía
+
+Agregué meta author
+
+Agregué texto alt a las imágenes que no tenían. 
