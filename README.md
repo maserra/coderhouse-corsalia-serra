@@ -1,4 +1,5 @@
 <h1> Corsalia </h1>
+  <p> Corsalia es un mundo de fantasía donde se encuentran criaturas mitologicos, guerreros, dioses y otros seres. Dentro de este universo se pueden encontrar diferentes terrirorios y regiones, y hasta tienen su propia idioma. </p>
 <h2>Links:</h2>
 <ul>
   <li>
