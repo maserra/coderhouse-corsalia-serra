@@ -47,46 +47,147 @@
 	<!-- Empieza el main -->
 	<main>
 		<h1>Mapa de Corsalia</h1>
-		<!-- Para cada ciudad un toast diferente -->
-		<!--
-		<div>
-			<img src="images/mapa.jpeg" alt="Mapa de Corsalia" id="liveToastBtn" data-bs-target="#my-toast">
+		<!-- Mapa -->
+		<div id="mapa-contenedor">
+			<img src="images/mapa-corsi.jpeg" alt="Región de Corsi" class="mapas" id="corsi" onclick="mostrar(0)">
+			<img src="images/mapa-zarlos.jpeg" alt="Región de Zarlos" class="mapas" id="zarlos" onclick="mostrar(1)">
+			<img src="images/mapa-tirobasia.jpeg" alt="Región de Tirobasia " class="mapas" id="tirobasia" onclick="mostrar(2)">
+			<img src="images/mapa-farsing-1.jpeg" alt="Región de Farsing (Parte 1)" class="mapas" id="farsing-1" onclick="mostrar(3)">
+			<img src="images/mapa-farsing-2.jpeg" alt="Región de Farsing (Parte 2)" class="mapas" id="farsing-2" onclick="mostrar(3)">
+			<img src="images/mapa-ramasia-1.jpeg" alt="Región de Ramasia (Parte 1)" class="mapas" id="ramasia-1" onclick="mostrar(4)">
+			<img src="images/mapa-ramasia-2.jpeg" alt="Región de Ramasia (Parte 2)" class="mapas" id="ramasia-2" onclick="mostrar(4)">
+			<img src="images/mapa-ramasia-3.jpeg" alt="Región de Ramasia (Parte 3)" class="mapas" id="ramasia-3" onclick="mostrar(4)">
+			<img src="images/mapa-ramasia-4.jpeg" alt="Región de Ramasia (Parte 4)" class="mapas" id="ramasia-4" onclick="mostrar(4)">
+			<img src="images/mapa-climania-1.jpeg" alt="Región de Climania (Parte 1)" class="mapas" id="climania-1" onclick="mostrar(5)">
+			<img src="images/mapa-climania-2.jpeg" alt="Región de Climania (Parte 2)" class="mapas" id="climania-2" onclick="mostrar(5)">
+			<img src="images/mapa-origamia-1.jpeg" alt="Región de Origamia (Parte 1)" class="mapas" id="origamia-1" onclick="mostrar(6)">
+			<img src="images/mapa-origamia-2.jpeg" alt="Región de Origamia (Parte 2)" class="mapas" id="origamia-2" onclick="mostrar(6)">
+			<img src="images/mapa-chiluana-1.jpeg" alt="Región de Chiluana (Parte 1)" class="mapas" id="chiluana-1" onclick="mostrar(7)">
+			<img src="images/mapa-chiluana-2.jpeg" alt="Región de Chiluana (Parte 2)" class="mapas" id="chiluana-2" onclick="mostrar(7)">
+			<img src="images/mapa-chiluana-3.jpeg" alt="Región de Chiluana (Parte 3)" class="mapas" id="chiluana-3" onclick="mostrar(7)">
+			<img src="images/mapa-chiluana-4.jpeg" alt="Región de Chiluana (Parte 4)" class="mapas" id="chiluana-4" onclick="mostrar(7)">
+			<img src="images/mapa-girasolandia-1.jpeg" alt="Región de Girasolandia (Parte 1)" class="mapas" id="girasolandia-1" onclick="mostrar(8)">
+			<img src="images/mapa-girasolandia-2.jpeg" alt="Región de Girasolandia (Parte 2)" class="mapas" id="girasolandia-2" onclick="mostrar(8)">
+			<img src="images/mapa-girasolandia-3.jpeg" alt="Región de Girasolandia (Parte 3)" class="mapas" id="girasolandia-3" onclick="mostrar(8)">
+			<img src="images/mapa-girasolandia-4.jpeg" alt="Región de Girasolandia (Parte 4)" class="mapas" id="girasolandia-4" onclick="mostrar(8)">
 		</div>
+		<!-- Para cada ciudad un toast diferente -->
+		<!-- Ciudad 0 - Corsi -->
 		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
-			<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
 				<div class="toast-header">
 					<strong class="me-auto">Mapa de Corsalia</strong>
-					<small>Ciudad</small>
-					<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+					<small>Corsi</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
 				</div>
 				<div class="toast-body">
-					Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt tempore, dolor. Eos reiciendis, aspernatur soluta, quaerat repellendus dolores illo adipisci inventore at debitis odio maiores quis odit et nostrum in.
+					En la región de Corsi se encuentra la ciudad de Tropolis, también conocida como la ciudad Universidad. Considerada por todo el mundo como el centro del saber, Tropolis alberga la mayor cantidad de escuelas universitarias del continente, entre ellas Esteller la gran academia de magia, casa de grandes magos de la historia.
 				</div>
 			</div>
 		</div>
-		-->
-		<div id="mapa-contenedor">
-			<img src="images/mapa-corsi.jpeg" alt="Región de Corsi" class="mapas" id="corsi">
-			<img src="images/mapa-zarlos.jpeg" alt="Región de Zarlos" class="mapas" id="zarlos">
-			<img src="images/mapa-tirobasia.jpeg" alt="Región de Tirobasia " class="mapas" id="tirobasia">
-			<img src="images/mapa-farsing-1.jpeg" alt="Región de Farsing (Parte 1)" class="mapas" id="farsing-1">
-			<img src="images/mapa-farsing-2.jpeg" alt="Región de Farsing (Parte 2)" class="mapas" id="farsing-2">
-			<img src="images/mapa-ramasia-1.jpeg" alt="Región de Ramasia (Parte 1)" class="mapas" id="ramasia-1">
-			<img src="images/mapa-ramasia-2.jpeg" alt="Región de Ramasia (Parte 2)" class="mapas" id="ramasia-2">
-			<img src="images/mapa-ramasia-3.jpeg" alt="Región de Ramasia (Parte 3)" class="mapas" id="ramasia-3">
-			<img src="images/mapa-ramasia-4.jpeg" alt="Región de Ramasia (Parte 4)" class="mapas" id="ramasia-4">
-			<img src="images/mapa-climania-1.jpeg" alt="Región de Climania (Parte 1)" class="mapas" id="climania-1">
-			<img src="images/mapa-climania-2.jpeg" alt="Región de Climania (Parte 2)" class="mapas" id="climania-2">
-			<img src="images/mapa-origamia-1.jpeg" alt="Región de Origamia (Parte 1)" class="mapas" id="origamia-1">
-			<img src="images/mapa-origamia-2.jpeg" alt="Región de Origamia (Parte 2)" class="mapas" id="origamia-2">
-			<img src="images/mapa-chiluana-1.jpeg" alt="Región de Chiluana (Parte 1)" class="mapas" id="chiluana-1">
-			<img src="images/mapa-chiluana-2.jpeg" alt="Región de Chiluana (Parte 2)" class="mapas" id="chiluana-2">
-			<img src="images/mapa-chiluana-3.jpeg" alt="Región de Chiluana (Parte 3)" class="mapas" id="chiluana-3">
-			<img src="images/mapa-chiluana-4.jpeg" alt="Región de Chiluana (Parte 4)" class="mapas" id="chiluana-4">
-			<img src="images/mapa-girasolandia-1.jpeg" alt="Región de Girasolandia (Parte 1)" class="mapas" id="girasolandia-1">
-			<img src="images/mapa-girasolandia-2.jpeg" alt="Región de Girasolandia (Parte 2)" class="mapas" id="girasolandia-2">
-			<img src="images/mapa-girasolandia-3.jpeg" alt="Región de Girasolandia (Parte 3)" class="mapas" id="girasolandia-3">
-			<img src="images/mapa-girasolandia-4.jpeg" alt="Región de Girasolandia (Parte 4)" class="mapas" id="girasolandia-4">
+		<!-- Ciudad 1 - Zarlos -->
+		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Zarlos</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
+				</div>
+				<div class="toast-body">
+					En Zarlos se ubica el gran desierto, extensiones inmensas de arena. Los pocos poblados que se encuentran en dicha región se los puede encontrar en las costas, siendo grandes centros comerciales. Se dice que en el medio del desierto se encuentra la Gran pirámide Mítica, una construcción tan antigua que poco se sabe de ella.
+				</div>
+			</div>
+		</div>
+		<!-- Ciudad 2 - Torobasia -->
+		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Tirobasia</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
+				</div>
+				<div class="toast-body">
+					Una tranquila región de reinos dedicados especialmente a la agricultura y ganadería. En ella se puede encontrar la gran llanura de los duendes, llamada así por la creencia de que en ella se han visto estas especies de seres, aunque nadie nunca lo pudo comprobar.
+				</div>
+			</div>
+		</div>
+		<!-- Ciudad 3 - Farsing -->
+		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Farsing</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
+				</div>
+				<div class="toast-body">
+					Una gran región donde al sur se encuentran las grandes montañas en las cuales se dice que los dragones haces sus nidos. Aunque es poco habitual se ha visto volar algunas de estas criaturas cerca de los picos y si uno vive cerca de las montañas y presta atención se puede escuchar algunos rugidos entre los lejanos valles de la cordillera. También en esta región se encuentra uno de los Volcanes más importantes, el volcán Tiro, se dice que en centro de él habita el dios del fuego Yagos.
+				</div>
+			</div>
+		</div>
+		<!-- Ciudad 4 - Ramasia -->
+		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Ramasia</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
+				</div>
+				<div class="toast-body">
+					En Ramasia se encuentra el Árbol Mágico, un roble de inmensas proporciones donde los Hijos de Hegromid, vulgarmente conocidos como elfos, han construido una de las ciudades más importantes de su reino. No se encuentra lejos de ser uno de los centros más importantes del saber, justo detrás de Tiropolis.
+				</div>
+			</div>
+		</div>
+		<!-- Ciudad 5 - Climania -->
+		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Climania</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
+				</div>
+				<div class="toast-body">
+					En climania una de las ciudades más importantes del continente, la ciudad de Mitic, capital de lo que fue uno de los imperios más grandes del mundo, pero que en estos días se vio reducido a un pequeño reino comparado con lo que alguna vez fue. Históricamente considerado como el origen del saber y la lengua común, la influencia de ese gran imperio se sigue apreciando hasta los días presentes.
+				</div>
+			</div>
+		</div>
+		<!-- Ciudad 6 - Origamia -->
+		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Origamia</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
+				</div>
+				<div class="toast-body">
+					Una de las dos regiones más al sur del continente, Origamia consta de grandes llanuras cubiertas de nieves eternas. Se dice que en dicha región uno puede encontrarse con criaturas temibles como los lobos gigantes o el gran oso blanco, sin contar de los dragones fríos, criaturas que son evitados mencionar en los cuentos por el terror que generan.
+				</div>
+			</div>
+		</div>
+		<!-- Ciudad 7 - Chiluana -->
+		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Chiluana</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
+				</div>
+				<div class="toast-body">
+					El segundo desierto más grande del continente, pocas ciudades se pueden encontrar en él. Una de las más importantes se encuentra a las periferias de las Grandes Ruinas. Un lugar donde se siente magia antigua y desconocida, pero a su vez donde las excavaciones han encontrado grandiosos artilugios de una civilización ya olvidada, pero por lo cual la gente esta dispuesta a pagar mucho dinero.
+				</div>
+			</div>
+		</div>
+		<!-- Ciudad 8 - Girasolandia -->
+		<div class="toast-container position-fixed top-xx left-xx p-3" id="my-toast">
+			<div id="liveToast" class="toasts" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<strong class="me-auto">Mapa de Corsalia</strong>
+					<small>Girasolandia</small>
+					<button type="button" class="btn-close" aria-label="Close" onclick="cerrar()"></button>
+				</div>
+				<div class="toast-body">
+					La segunda región más al Sur, Grisolandia, consta del único bosque de girasoles gigantes, un lugar del cual poco se puede decir por lo extraño que es; y además se Encuentra el cráter de un antiguo meteorito, lugar al cual nadie se ha acercado, los pocos que fueron no volvieron y si lo hicieron estaba tan locos que ya no podían vivir en sociedad. Estos últimos no paraban de delirar acerca de gigantes, historias que nunca se pudieron comprobar. 
+				</div>
+			</div>
 		</div>
 	<!-- Empieza el footer - Igual en todas las páginas -->
 	<footer>
@@ -103,10 +204,14 @@
 	<!-- Script Bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script>
-		document.getElementById("liveToastBtn").onclick = function(){
-			let myAlert = document.querySelector('.toast');
-			let bsAlert = new bootstrap.Toast(myAlert);
-			bsAlert.show();
+		var ciudades = document.getElementsByClassName("toasts");
+		function mostrar(n){
+			ciudades[n].style.display = 'block';
+		}
+		function cerrar(){
+			for(i = 0; i<9; i++){
+				ciudades[i].style.display = 'none';
+			}
 		}
 	</script>
 </body>
