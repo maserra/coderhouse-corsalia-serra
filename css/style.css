@@ -511,6 +511,13 @@ footer div {
   color: black;
 }
 
+#mapa-texto {
+  font-size: 0.9rem;
+  width: 85%;
+  margin: 0 auto 10px auto;
+  font-style: italic;
+}
+
 /*Media Queries Mapa*/
 @media (min-width: 468px) {
   .left-xx {

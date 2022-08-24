@@ -147,6 +147,13 @@ small{
     @extend .me-auto;
 }
 
+#mapa-texto{
+    font-size: map-get($sizeLetra, texto-chico);
+    width: 85%;
+    margin: 0 auto 10px auto;
+    font-style: italic;
+}
+
 /*Media Queries Mapa*/
 @media (min-width: 468px){
 	.left-xx{
